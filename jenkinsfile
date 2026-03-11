@@ -5,6 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
+                git branch: "main"
                 git 'https://github.com/VatsalSolanki-01/cicd_pipelineProject'
             }
         }
